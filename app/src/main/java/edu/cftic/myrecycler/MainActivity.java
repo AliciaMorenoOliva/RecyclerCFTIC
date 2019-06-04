@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         Libro libro_aux = null;
 
         for (int i = 0; i < 20; i++) {
-            libro_aux = new Libro("Libro " + i, " Autor " + i);
+            libro_aux = new Libro("Libro " + i, " Autor " + i, "Editorial" + i);
             datos.add(libro_aux);
         }
 

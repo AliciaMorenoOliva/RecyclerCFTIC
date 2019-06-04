@@ -7,13 +7,18 @@ import android.view.ViewGroup;
 
 import java.util.ArrayList;
 
+
+//esta clase provee los datos al recicle
 public class AdapterLibros extends RecyclerView.Adapter<LibroViewHolder> {
 
-
+//para guardar la lista
     private ArrayList<Libro> datos;
 
 
     //Creo la vista, con el Holder dentro
+
+    //aqui estoy creando cada elemento de la vista
+
     @Override
     public LibroViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LibroViewHolder libroViewHolder = null;
@@ -35,7 +40,7 @@ public class AdapterLibros extends RecyclerView.Adapter<LibroViewHolder> {
         holder.cargarLibroEnHolder(libro);
 
     }
-
+//pide el numero de libros para crear el numero de lines de la lista
     @Override
     public int getItemCount() {
         return datos.size();
